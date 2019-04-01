@@ -27,7 +27,7 @@ public class BookResource {
 	private BookStoreService bookStoreService;
 	
 	@POST
-	@RolesAllowed("SSSS")
+	@RolesAllowed("ADMIN")
 	@Path("create-book")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
